@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    175181,       3198]
-NotebookOptionsPosition[    174710,       3177]
-NotebookOutlinePosition[    175053,       3192]
-CellTagsIndexPosition[    175010,       3189]
+NotebookDataLength[    175292,       3201]
+NotebookOptionsPosition[    174821,       3180]
+NotebookOutlinePosition[    175164,       3195]
+CellTagsIndexPosition[    175121,       3192]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -718,6 +718,7 @@ Cell[BoxData[
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
+  ImageSize->{418., Automatic},
   Method->{
    "DefaultBoundaryStyle" -> Automatic, "TransparentPolygonMesh" -> True},
   PlotRange->{{-3.303045763365663, 3.303045763365663}, {-3.303045763365663, 
@@ -729,7 +730,7 @@ Cell[BoxData[
      Scaled[0.05], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.6857586657637215`*^9}]
+ CellChangeTimes->{3.6857586657637215`*^9, 3.68584528503006*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3161,6 +3162,7 @@ Cell[BoxData[
   FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
+  ImageSize->{420., Automatic},
   Method->{
    "DefaultBoundaryStyle" -> Automatic, "TransparentPolygonMesh" -> True},
   PlotRange->{{-3.130537568661286, 3.130537568661286}, {-3.130537568661286, 
@@ -3172,7 +3174,8 @@ Cell[BoxData[
      Scaled[0.05], 
      Scaled[0.05]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{{3.685758613659741*^9, 3.685758639237204*^9}}]
+ CellChangeTimes->{{3.685758613659741*^9, 3.685758639237204*^9}, 
+   3.685845285277074*^9}]
 }, Open  ]]
 },
 WindowSize->{751, 821},
@@ -3194,15 +3197,13 @@ Notebook[{
 Cell[558, 20, 120, 2, 30, "Input"],
 Cell[CellGroupData[{
 Cell[703, 26, 414, 13, 30, "Input"],
-Cell[1120, 41, 36476, 690, 376, "Output"]
+Cell[1120, 41, 36529, 691, 434, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37633, 736, 468, 14, 30, "Input"],
-Cell[38104, 752, 136590, 2422, 376, "Output"]
+Cell[37686, 737, 468, 14, 30, "Input"],
+Cell[38157, 753, 136648, 2424, 469, "Output"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
