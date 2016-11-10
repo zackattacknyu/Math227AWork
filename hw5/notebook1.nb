@@ -1,0 +1,200 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7159,        190]
+NotebookOptionsPosition[      6729,        170]
+NotebookOutlinePosition[      7074,        185]
+CellTagsIndexPosition[      7031,        182]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"rS", "*", "x", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", 
+           RowBox[{"x", "/", "y"}]}], ")"}]}], "\[Equal]", "0"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"rE", "*", "y", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", "y"}], ")"}]}], "-", 
+         RowBox[{"beta", "/", "x"}]}], "\[Equal]", "0"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "3"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "3"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", "Automatic"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"rE", ",", "0.1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"rS", ",", "0.1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"beta", ",", "0.1", ",", "100"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.687753087753348*^9, 3.6877531781967382`*^9}, {
+  3.6877532139393845`*^9, 3.6877532309324193`*^9}, {3.68775345525539*^9, 
+  3.687753531271738*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`beta$$ = 4.1, $CellContext`rE$$ = 
+    1.77, $CellContext`rS$$ = 8.53, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`rE$$], 0.1, 10}, {
+      Hold[$CellContext`rS$$], 0.1, 10}, {
+      Hold[$CellContext`beta$$], 0.1, 100}}, Typeset`size$$ = {
+    417., {177., 184.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`rE$25676$$ = 
+    0, $CellContext`rS$25677$$ = 0, $CellContext`beta$25678$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`beta$$ = 0.1, $CellContext`rE$$ = 
+        0.1, $CellContext`rS$$ = 0.1}, "ControllerVariables" :> {
+        Hold[$CellContext`rE$$, $CellContext`rE$25676$$, 0], 
+        Hold[$CellContext`rS$$, $CellContext`rS$25677$$, 0], 
+        Hold[$CellContext`beta$$, $CellContext`beta$25678$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      ContourPlot[{$CellContext`rS$$ $CellContext`x (
+           1 - $CellContext`x/$CellContext`y) == 
+         0, $CellContext`rE$$ $CellContext`y (
+            1 - $CellContext`y) - $CellContext`beta$$/$CellContext`x == 
+         0}, {$CellContext`x, -3, 10}, {$CellContext`y, -3, 10}, PlotLegends -> 
+        Automatic], 
+      "Specifications" :> {{$CellContext`rE$$, 0.1, 10}, {$CellContext`rS$$, 
+         0.1, 10}, {$CellContext`beta$$, 0.1, 100}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{468., {262., 269.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6877531787807417`*^9, {3.6877532190353947`*^9, 3.68775323148242*^9}, 
+   3.687753472172358*^9, 3.687753531684762*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"x", "^", "3"}]}], "+", 
+        RowBox[{"x", "^", "2"}], "-", "beta"}], ",", "0.1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "0.5"}], ",", "2"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"beta", ",", 
+     RowBox[{"-", "0.5"}], ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6877556735678167`*^9, 3.6877557159840555`*^9}, {
+  3.687755771204274*^9, 3.6877557961433697`*^9}, {3.6877564312737923`*^9, 
+  3.687756475338953*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`beta$$ = 0.06800000000000006, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`beta$$], -0.5, 1}}, Typeset`size$$ = {
+    360., {108., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`beta$51187$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`beta$$ = -0.5}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`beta$$, $CellContext`beta$51187$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[{-$CellContext`x^3 + $CellContext`x^2 - $CellContext`beta$$, 
+         0.1}, {$CellContext`x, -0.5, 2}], 
+      "Specifications" :> {{$CellContext`beta$$, -0.5, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {157., 164.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.687755716518057*^9, {3.6877557730072813`*^9, 3.6877557965483704`*^9}, {
+   3.687756431817793*^9, 3.687756475690954*^9}}]
+}, Open  ]]
+},
+WindowSize->{1167, 855},
+WindowMargins->{{244, Automatic}, {-49, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1187, 33, 50, "Input"],
+Cell[1770, 57, 2443, 48, 548, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4250, 110, 667, 19, 30, "Input"],
+Cell[4920, 131, 1793, 36, 371, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
