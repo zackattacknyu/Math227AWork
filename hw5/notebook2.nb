@@ -1,0 +1,144 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4578,        134]
+NotebookOptionsPosition[      4115,        113]
+NotebookOutlinePosition[      4462,        128]
+CellTagsIndexPosition[      4419,        125]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"a", "=", "2"}], ";", 
+  RowBox[{"b", "=", "3"}], ";"}]], "Input",
+ CellChangeTimes->{{3.687731711511427*^9, 3.6877317439080553`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"ContourPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", "-", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"b", "+", "1"}], ")"}], "x"}], "+", 
+        RowBox[{"a", "*", 
+         RowBox[{"x", "^", "2"}], "y"}]}], ",", 
+       RowBox[{
+        RowBox[{"b", "*", "x"}], "-", 
+        RowBox[{"a", "*", 
+         RowBox[{"x", "^", "2"}], "*", "y"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", "0", ",", "5"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0.1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "0.1", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.687731747165968*^9, 3.687731777796589*^9}, {
+  3.687732133743461*^9, 3.6877321494643583`*^9}, {3.687732916732382*^9, 
+  3.6877329213187118`*^9}, {3.6877330297065983`*^9, 3.687733031405431*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1.51, $CellContext`b$$ = 2.03, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 0.1, 10}, {
+      Hold[$CellContext`b$$], 0.1, 10}}, Typeset`size$$ = {
+    360., {180., 187.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$8267$$ = 
+    0, $CellContext`b$8268$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 0.1, $CellContext`b$$ = 0.1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$8267$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$8268$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      ContourPlot[{
+        1 - ($CellContext`b$$ + 
+          1) $CellContext`x + $CellContext`a$$ $CellContext`x^2 \
+$CellContext`y, $CellContext`b$$ $CellContext`x - $CellContext`a$$ \
+$CellContext`x^2 $CellContext`y}, {$CellContext`x, 0, 5}, {$CellContext`y, 0, 
+         5}], "Specifications" :> {{$CellContext`a$$, 0.1, 
+         10}, {$CellContext`b$$, 0.1, 10}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {241., 248.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.6877317794650335`*^9, 3.6877321566560583`*^9, 
+  3.6877329219557147`*^9, 3.687733032746355*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"21", "-", "15"}]], "Input",
+ CellChangeTimes->{{3.6878019832525578`*^9, 3.6878019847545485`*^9}}],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.687801990398294*^9}]
+}, Open  ]]
+},
+WindowSize->{1080, 1837},
+WindowMargins->{{-1088, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 168, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[751, 28, 1002, 27, 30, "Input"],
+Cell[1756, 57, 2112, 43, 506, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3905, 105, 121, 2, 30, "Input"],
+Cell[4029, 109, 70, 1, 63, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
