@@ -1,6 +1,15 @@
 function [ times,states ] = computeTimecourse( qMatrix,initState,numSteps )
-%COMPUTETIMECOURSE Summary of this function goes here
-%   Detailed explanation goes here
+%COMPUTETIMECOURSE
+%
+%Input:
+%   qMatrix - matrix for graph where entry (i,j) corresponds to the edge
+%               from state i to state j
+%   initState - starting state
+%   numSteps - number of steps to compute
+%
+%Output:
+%   times - time elapsed after each step
+%   states - current state at each step
 
 times = zeros(1,numSteps); %time point
 states = zeros(1,numSteps); %current state at each point
@@ -20,10 +29,13 @@ for i = 2:numSteps
     sampledT = sampleFromDist(lambdaBar,1);
     curT = curT + sampledT;
     
-    %sample uniformly, then use lambda to decide which state
-    %   to transition to
+    %get uniform sample
     sampledR = rand(1);
+    
+    %put it in 0 to lambdaBar range
     sampledLambda = sampledR*lambdaBar;
+    
+    %find which state that value corresponds to
     curState = find(cumsum(qMatrix(curState,:))>sampledLambda,1,'first');
     
     states(i) = curState;
